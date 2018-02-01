@@ -13,11 +13,14 @@ SetWorkingDir, %A_ScriptDir%
 ; hotkey: ctrl+shift+u
 ^+u::
 
+
+
 /*
 --------------
 Set variables
 --------------
 */
+
 ; Set dot declaration. Must be two characters.
 dotdec := "2A"
 
@@ -85,11 +88,13 @@ Loop {
 	StringUpper, brand, brand
 
 
+
 	/*
 	----------------------
 	Send output to screen
 	----------------------
 	*/
+
 	; sleep %sleeptime%
 	Send, %seq%{ENTER}%dotdec%EY{ENTER}T%tirecode%%brand%{ENTER}U{ENTER}
 
